@@ -15,7 +15,7 @@ jobs:
       - name: Copy files to EC2 via SSH
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.EC2_HOST }}
+          host: ${{ secrets.HOST }}
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "."
@@ -24,7 +24,7 @@ jobs:
       - name: Restart Flask service
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.EC2_HOST }}
+          host: ${{ secrets.HOST }}
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
