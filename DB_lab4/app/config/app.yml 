@@ -1,0 +1,5 @@
+database:
+  host: "localhost"              # Залиште "localhost", якщо сервер MySQL працює локально
+  user: "root"  # Введіть ваше ім'я користувача MySQL
+  password: "7489199d"         # Введіть ваш пароль для MySQL
+  database: "gym_management"               # Назва бази даних, яку ви створили (lab3)
