@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify
 from flasgger import swag_from
 from app import db
+from app.my_project.auth.domain.gym_models import Client
 
 client_bp = Blueprint('client_bp', __name__)
 

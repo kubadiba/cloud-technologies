@@ -1,5 +1,5 @@
 
-from app.my_project.auth.controller.gym_controller import gym_controller
+from app.my_project.auth.domain.gym_models import Gym
 
 def register_routes(app):
     """
