@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 from flasgger import swag_from
 from app import db
-
+from app.my_project.auth.domain.gym_models import Schedule
 schedule_bp = Blueprint('schedule_bp', __name__)
 
 @schedule_bp.route('/api/schedules', methods=['GET'])
